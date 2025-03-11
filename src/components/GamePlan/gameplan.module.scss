@@ -1,0 +1,27 @@
+.game {
+  padding: 40px 60px;
+  width: 100%;
+  text-align: center;
+  .game_main {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    .game_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: start;
+      .game_desc_content {
+        background-color: #d1d1d1;
+        padding: 8px 12px;
+        text-align: start;
+        .game_desc_text {
+          margin-left: 25px;
+        }
+      }
+    }
+    .game_gif {
+      width: 100%;
+    }
+  }
+}

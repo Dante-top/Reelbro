@@ -8,13 +8,15 @@ const Banner: React.FC = () => {
       <div className={styles.banner_subtitle}>
         <h2>WHERE SPORTS. CHARITY & CRYPTO COLLIDE</h2>
       </div>
-      <div className={`${styles.banner_social}`}>
-        <SocialButton />
-      </div>
-      <div className={styles.banner_btnWallet}>
-        <button className={`${styles.walletConnect}`} onClick={() => {}}>
-          CONNECT&nbsp;WALLET
-        </button>
+      <div className={styles.banner_bottom}>
+        <div className={`${styles.banner_social}`}>
+          <SocialButton />
+        </div>
+        <div className={styles.banner_btnWallet}>
+          <button className={`${styles.walletConnect}`} onClick={() => {}}>
+            CONNECT&nbsp;WALLET
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -12,3 +12,39 @@ export const socialIcons = [
   { name: "instagram", iconSrc: "/assets/img/social/instagram.svg", url: "/" },
   { name: "tiktok", iconSrc: "/assets/img/social/tiktok.svg", url: "/" },
 ];
+
+export const teamMembers = [
+  {
+    avatar: "/assets/img/img_draft.png",
+    name: "ReelBro",
+    desc: "Casting a net of support across sports and charities—every trade makes a splash!",
+  },
+  {
+    avatar: "/assets/img/img_draft.png",
+    name: "Football Bruv",
+    desc: "No offside, just upside! Kicking it to the moon with every trade.",
+  },
+];
+
+export const gameplanContent = [
+  {
+    title: "Proof of Play",
+    desc: "Play, earn, and support charities with every interaction.",
+  },
+  {
+    title: "ReelFi",
+    desc: "DeFi, but with real impact",
+  },
+  {
+    title: "Broconomics",
+    desc: "Economy powered by sports & community engagement.",
+  },
+  {
+    title: "Catch & HODL",
+    desc: "Reel in rewards while supporting real-world causes.",
+  },
+  {
+    title: "WAGMI United",
+    desc: "Because we’re all gonna make it, on and off the pitch.",
+  },
+];

@@ -2,6 +2,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
+import Team from "./components/Team";
+import Donate from "./components/Donate";
+import GamePlan from "./components/GamePlan";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
       />
       <Navbar />
       <Banner />
+      <Team />
+      <Donate />
+      <GamePlan />
     </div>
   );
 }

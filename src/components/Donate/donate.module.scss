@@ -1,0 +1,24 @@
+.donate {
+  background-color: #d1d1d1;
+  padding: 40px 60px;
+  .donate_illust {
+    width: 100%;
+    padding: 25px 0;
+    .donate_illust_img {
+      width: 100%;
+      height: 560px;
+    }
+  }
+  .donate_desc {
+    font-size: 36px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 426px) {
+  .donate {
+    .donate_desc {
+      font-size: 18px;
+    }
+  }
+}

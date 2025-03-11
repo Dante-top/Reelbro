@@ -7,7 +7,7 @@
   position: relative;
 
   .bg_color {
-    background-color: #48bfe3 !important;
+    background-color: #fff !important;
   }
 
   .navbar {
@@ -161,12 +161,7 @@
 @media (max-width: 991px) {
   .header {
     padding: 0;
-    height: 56vw !important;
     position: relative;
-
-    .bg_color {
-      background-color: #48bfe3 !important;
-    }
 
     .navbar {
       .nav_logo {

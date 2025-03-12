@@ -1,0 +1,29 @@
+.token {
+  padding: 40px 60px;
+  text-align: center;
+  .token_main {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    .token_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: start;
+      width: 100%;
+
+      .token_desc_content {
+        background-color: #c1daea;
+        color: #000;
+        padding: 8px 12px;
+        text-align: start;
+        .token_desc_text {
+          margin-left: 25px;
+        }
+      }
+    }
+    .token_gif {
+      width: 80%;
+    }
+  }
+}

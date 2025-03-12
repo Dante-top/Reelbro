@@ -10,7 +10,7 @@ const Team: React.FC = () => {
       <h1>MEET THE TEAM</h1>
       {teamMembers.map((item, index) => {
         return (
-          <div className={styles.team_member} key={index}>
+          <div className={`${styles.team_member} container-lg`} key={index}>
             <img
               src={item.avatar}
               className={styles.team_avatar}

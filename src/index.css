@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@font-face {
+  font-family: "Badaboom BB";
+  src: url("./assets/font/BADABB__.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-  font-family: "Paytone One", sans-serif;
+  font-family: "Badaboom BB", sans-serif;
   background-color: #4d6cc3 !important;
   color: #fff !important;
 }
 
 code {
-  font-family: "Paytone One", sans-serif;
+  font-family: "Badaboom BB", sans-serif;
 }
 
 h1,
@@ -16,10 +21,11 @@ h3,
 p,
 span,
 a {
-  font-family: "Paytone One", sans-serif;
+  font-family: "Badaboom BB", sans-serif;
 }
 h1,
 h2,
 h3 {
+  font-family: "Badaboom BB", sans-serif;
   color: #f0b90b !important;
 }

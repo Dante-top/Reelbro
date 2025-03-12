@@ -1,9 +1,10 @@
 .team {
-  padding: 50px;
   gap: 40px;
+  padding: 40px 0;
   .team_member {
     width: 80%;
     display: flex;
+    justify-content: center;
     gap: 40px;
     .team_avatar {
       width: 448px;

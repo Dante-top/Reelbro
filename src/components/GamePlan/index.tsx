@@ -4,7 +4,7 @@ import styles from "./gameplan.module.scss";
 
 const GamePlan: React.FC = () => {
   return (
-    <div className={`${styles.game}`}>
+    <div className={`${styles.game} container-lg`}>
       <h1 className="mb-5">REELNOMICS: The Game Plan</h1>
       <div className={styles.game_main}>
         <div className={styles.game_desc}>

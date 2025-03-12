@@ -3,7 +3,7 @@ import styles from "./donate.module.scss";
 
 const Donate: React.FC = () => {
   return (
-    <div className={`${styles.donate}`}>
+    <div className={`${styles.donate} container-lg`}>
       <div className="container-lg text-center">
         <h1>Play-to-Donate | Stake-to-Win | HODL & Hustle</h1>
         <div className={styles.donate_illust}>

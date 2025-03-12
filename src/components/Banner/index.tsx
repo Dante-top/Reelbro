@@ -4,7 +4,7 @@ import SocialButton from "../SocialButton";
 
 const Banner: React.FC = () => {
   return (
-    <div className={`${styles.banner}`}>
+    <div className={`${styles.banner} container-lg`}>
       <div className={styles.banner_subtitle}>
         <h2>WHERE SPORTS. CHARITY & CRYPTO COLLIDE</h2>
       </div>

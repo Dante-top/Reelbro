@@ -48,3 +48,18 @@ export const gameplanContent = [
     desc: "Because we’re all gonna make it, on and off the pitch.",
   },
 ];
+
+export const tokenUtilityContent = [
+  {
+    title: "Stake-to-Play",
+    desc: "Boost your rewards while backing grassroots sports.",
+  },
+  {
+    title: "TeamREEL",
+    desc: "A community-driven token where the squad wins together.",
+  },
+  {
+    title: "No Cap Gains",
+    desc: "Fueling the next-gen sports metaverse—no cap.",
+  },
+];

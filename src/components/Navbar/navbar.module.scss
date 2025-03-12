@@ -3,11 +3,10 @@
   max-width: 100%;
   margin: auto;
   width: 100%;
-  padding: 0 30px;
   position: relative;
 
   .bg_color {
-    background-color: #fff !important;
+    background-color: #f5882d !important;
   }
 
   .navbar {
@@ -15,7 +14,8 @@
     margin: 0 auto;
     font-size: 15px;
     margin: 0;
-    padding: 5px 0;
+    width: 100%;
+    background-color: #f5882d;
     width: 100%;
 
     .responsive_button {
@@ -42,7 +42,7 @@
 
       .menu {
         padding: 0.5rem 1rem;
-        color: #00303e;
+        color: #fff;
         border-radius: 1.3rem;
         margin: 40px 25px;
         font-size: 20px;
@@ -75,17 +75,17 @@
       }
 
       .menu:hover {
-        border-color: #000;
-        color: #d2f6ff;
-        background-color: #00303e;
+        color: #50b861;
         padding: 0.5rem 1rem;
       }
 
       .walletConnect {
         padding: 0.5rem 1rem;
-        color: #ffffff;
-        background-color: #2c2c2c;
-        border: 2px solid #d2f6ff;
+        -webkit-text-stroke: 4px white;
+        paint-order: stroke fill;
+        color: #000;
+        background-color: #f5882d;
+        border: 3px solid #000;
         border-radius: 1.3rem;
         margin: 0 25px;
         font-size: 18px;
@@ -96,9 +96,8 @@
       }
 
       .walletConnect:hover {
-        border-color: #000;
-        color: #00303e;
-        background-color: #d2f6ff;
+        background-color: #f79a4d;
+        opacity: 0.8;
         padding: 0.5rem 1rem;
       }
     }

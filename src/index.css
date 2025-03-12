@@ -2,6 +2,8 @@
 
 body {
   font-family: "Paytone One", sans-serif;
+  background-color: #4d6cc3 !important;
+  color: #fff !important;
 }
 
 code {
@@ -15,4 +17,9 @@ p,
 span,
 a {
   font-family: "Paytone One", sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: #f0b90b !important;
 }

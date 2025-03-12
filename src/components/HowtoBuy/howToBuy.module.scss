@@ -1,37 +1,39 @@
-.token {
+.buy {
   padding: 40px 0;
+  width: 100%;
   text-align: center;
-  .token_main {
+  .buy_main {
     display: flex;
-    gap: 50px;
+    gap: 45px;
     justify-content: center;
-    .token_desc {
+    width: 100%;
+    .buy_desc {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 45px;
       justify-content: start;
       width: 100%;
-      .token_desc_content {
+      .buy_desc_content {
         background-color: #c1daea;
         color: #000;
-        padding: 8px 12px;
+        padding: 24px 12px;
         text-align: center;
+        .buy_desc_text {
+          margin-left: 25px;
+        }
       }
     }
-    .token_gif {
-      width: 80%;
+    .buy_gif {
+      width: 100%;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .token {
+  .buy {
     padding: 40px 15px;
-    .token_main {
+    .buy_main {
       flex-direction: column;
-      .token_gif {
-        width: 100%;
-      }
     }
   }
 }

@@ -6,11 +6,13 @@
     display: flex;
     gap: 45px;
     justify-content: center;
+    width: 100%;
     .game_desc {
       display: flex;
       flex-direction: column;
       gap: 15px;
       justify-content: start;
+      width: 100%;
       .game_desc_content {
         background-color: #c1daea;
         color: #000;
@@ -23,6 +25,14 @@
     }
     .game_gif {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .game {
+    .game_main {
+      flex-direction: column;
     }
   }
 }

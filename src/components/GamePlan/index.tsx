@@ -17,7 +17,7 @@ const GamePlan: React.FC = () => {
             );
           })}
         </div>
-        <div className="d-flex">
+        <div className="d-flex w-100">
           <img
             className={styles.game_gif}
             src="/assets/img/illu_draft.png"

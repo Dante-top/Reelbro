@@ -6,6 +6,7 @@ import Team from "./components/Team";
 import Donate from "./components/Donate";
 import GamePlan from "./components/GamePlan";
 import TokenUtility from "./components/TokenUtility";
+import HowToBuy from "./components/HowtoBuy";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Donate />
       <GamePlan />
       <TokenUtility />
+      <HowToBuy />
     </div>
   );
 }

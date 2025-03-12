@@ -63,3 +63,22 @@ export const tokenUtilityContent = [
     desc: "Fueling the next-gen sports metaverse—no cap.",
   },
 ];
+
+export const BuyContent = [
+  {
+    title: "1",
+    desc: "",
+  },
+  {
+    title: "2",
+    desc: "",
+  },
+  {
+    title: "3",
+    desc: "",
+  },
+  {
+    title: "4",
+    desc: "",
+  },
+];

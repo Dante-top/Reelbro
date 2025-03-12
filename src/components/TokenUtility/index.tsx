@@ -7,7 +7,7 @@ const TokenUtility: React.FC = () => {
     <div className={`${styles.token} container-lg`}>
       <h1 className="mb-5">REELNOMICS: The token Plan</h1>
       <div className={styles.token_main}>
-        <div className="d-flex">
+        <div className="d-flex w-100">
           <img
             className={styles.token_gif}
             src="/assets/img/illu_draft.png"

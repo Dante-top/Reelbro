@@ -1,11 +1,11 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 550px;
   background-color: #4d6cc3;
   .banner_subtitle {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -18,24 +18,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .banner_btnWallet {
-      .walletConnect {
-        padding: 1rem 7rem;
-        color: #ffffff;
-        background-color: #50b861;
-        border: 4px solid #000;
-        margin: 0 25px;
-        font-size: 24px;
-        letter-spacing: 2px;
-        font-family: "Badaboom BB", sans-serif;
-        cursor: pointer;
-        transition: all 0.1s;
-      }
+  }
+  .banner_btnWallet {
+    padding: 20px;
+    width: 450px;
+    background-color: #c1daea;
+    color: #000;
+    border: 4px solid #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    .walletConnect {
+      padding: 1rem 7rem;
+      color: #ffffff;
+      background-color: #50b861;
+      border: 4px solid #000;
+      margin: 0 25px;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-family: "Badaboom BB", sans-serif;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
 
-      .walletConnect:hover {
-        opacity: 0.8;
-        padding: 1rem 5rem;
-      }
+    .walletConnect:hover {
+      opacity: 0.8;
+      padding: 1rem 5rem;
     }
   }
 }

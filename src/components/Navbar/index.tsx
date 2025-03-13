@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./navbar.module.scss";
 import { navbarMenuList } from "../../constant/utils";
 
@@ -8,6 +8,19 @@ import { navbarMenuList } from "../../constant/utils";
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [style, setStyle] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setStyle(styles.bg_color);
+      } else {
+        setStyle("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const changeStyle = () => {
     if (style === "") {
@@ -26,7 +39,7 @@ const Navbar: React.FC = () => {
           <a href="/" className="navbar-brand ">
             <img
               className={styles.nav_logo}
-              src="/assets/img/REELBRO.svg"
+              src="/assets/img/logo_3.png"
               alt="Logo"
             />
           </a>

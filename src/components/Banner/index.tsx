@@ -14,11 +14,17 @@ const Banner: React.FC = () => {
         </div>
       </div>
       <div className={styles.banner_btnWallet}>
-        <h2>MINT REELBRO TOKEN NOW!</h2>
-        <p>
-          You can now claim your $FLOCK tokens. Plus, stake your tokens to earn
-          rewards! Add 0xb33D999469a7e6b9EbC25A3a05248287b855eD46 to your wallet
-          to see your $FLOCK.
+        <h2 className={styles.banner_btnWallet_title}>
+          MINT REELBRO TOKEN NOW!
+        </h2>
+        <p className={styles.banner_btnWallet_subTitle}>
+          You can now claim your $REELBRO tokens. Plus, stake your tokens to
+          earn rewards!
+          <br />
+          Add
+          <br />
+          0xb33D999469a7e6b9EbC25A3a05248287b855eD46 to your wallet to see your
+          $FLOCK.
         </p>
         <button className={`${styles.walletConnect}`} onClick={() => {}}>
           CONNECT&nbsp;WALLET

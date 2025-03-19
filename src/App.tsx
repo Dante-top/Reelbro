@@ -7,6 +7,7 @@ import Donate from "./components/Donate";
 import GamePlan from "./components/GamePlan";
 import TokenUtility from "./components/TokenUtility";
 import HowToBuy from "./components/HowtoBuy";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <GamePlan />
       <TokenUtility />
       <HowToBuy />
+      <Footer />
     </div>
   );
 }

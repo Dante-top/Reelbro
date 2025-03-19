@@ -25,6 +25,12 @@ const HowToBuy: React.FC = () => {
           />
         </div>
       </div>
+      <h1>CONTRACT ADDRESS</h1>
+      <div className="text-center w-100 d-flex justify-content-center">
+        <p className={styles.buy_address}>
+          cxa12345678qwertyuiop54321qwerttyyuiuiopumpfun
+        </p>
+      </div>
     </div>
   );
 };

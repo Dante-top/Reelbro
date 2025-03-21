@@ -86,3 +86,19 @@
     }
   }
 }
+
+@media (max-width: 426px) {
+  .banner {
+    .banner_btnWallet {
+      padding: 20px 10px;
+      width: 98%;
+      .banner_btnWallet_subTitle {
+        font-size: 14px;
+        font-family: "HeyComic", sans-serif;
+      }
+      .walletConnect {
+        padding: 1rem;
+      }
+    }
+  }
+}

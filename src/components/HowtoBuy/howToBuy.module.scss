@@ -47,3 +47,13 @@
     }
   }
 }
+
+@media (max-width: 426px) {
+  .buy {
+    padding: 20px 15px;
+    .buy_address {
+      width: 95%;
+      font-size: 14px;
+    }
+  }
+}

@@ -7,10 +7,21 @@ export const navbarMenuList = [
   { menu: "PROPOSALS", href: "#proposals" },
 ];
 export const socialIcons = [
-  { name: "twitter", iconSrc: "/assets/img/social/twitter.svg", url: "/" },
-  { name: "telegram", iconSrc: "/assets/img/social/telegram.svg", url: "/" },
-  { name: "instagram", iconSrc: "/assets/img/social/instagram.svg", url: "/" },
-  { name: "tiktok", iconSrc: "/assets/img/social/tiktok.svg", url: "/" },
+  {
+    name: "twitter",
+    iconSrc: "/assets/img/social/twitter.svg",
+    url: "https://x.com/ReelBro_25",
+  },
+  {
+    name: "telegram",
+    iconSrc: "/assets/img/social/telegram.svg",
+    url: "https://t.me/ReelBroOfficial",
+  },
+  {
+    name: "tiktok",
+    iconSrc: "/assets/img/social/tiktok.svg",
+    url: "https://www.tiktok.com/@reelbro_25",
+  },
 ];
 
 export const teamMembers = [

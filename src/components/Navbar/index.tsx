@@ -23,10 +23,15 @@ const Navbar: React.FC = () => {
   }, []);
 
   const changeStyle = () => {
-    if (style === "") {
+    console.log("open: ", open);
+    if (!open) {
       setStyle(styles.bg_color);
     } else {
-      setStyle("");
+      if (style === "") {
+        setStyle(styles.bg_color);
+      } else {
+        setStyle("");
+      }
     }
   };
 

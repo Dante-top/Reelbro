@@ -41,13 +41,16 @@ const Navbar: React.FC = () => {
         className={`${styles.navbar} ${style} navbar navbar-expand-lg navbar-light bg-lignt`}
       >
         <div className="container-lg">
-          <a href="/" className="navbar-brand ">
-            <img
-              className={styles.nav_logo}
-              src="/assets/img/logo_1.png"
-              alt="Logo"
-            />
-          </a>
+          <div className="d-flex gap-1 justify-content-center align-items-center">
+            <a href="/" className="navbar-brand ">
+              <img
+                className={styles.nav_logo}
+                src="/assets/img/logo_1.png"
+                alt="Logo"
+              />
+            </a>
+            <h1 className="mt-2">REELBRO</h1>
+          </div>
           <button
             type="button"
             className={`navbar-toggler ml-auto ${styles.responsive_button}`}

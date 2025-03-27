@@ -28,4 +28,6 @@ h2,
 h3 {
   font-family: "Badaboom BB", sans-serif;
   color: #f0b90b !important;
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
 }

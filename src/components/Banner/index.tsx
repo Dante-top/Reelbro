@@ -21,9 +21,12 @@ const Banner: React.FC = () => {
             Align your energy. Invest with intention. ReelBro turns good karma
             into abundance — flowing back as wealth, purpose, and peace.
           </p>
-          <p className={styles.banner_btnWallet_subTitle}>
-            Up to 1000%+ APY available for early stakers
-          </p>
+          <div
+            className={`${styles.banner_joinus_concepts} d-flex gap-2 justify-content-center align-items-center`}
+          >
+            <span className={styles.banner_joinus_dot}></span>
+            <p>Up to 1000%+ APY available for early stakers</p>
+          </div>
           <div className="d-flex flex-column justify-content-start align-items-start gap-2">
             <div
               className={`${styles.banner_joinus_points} d-flex gap-2 justify-content-center align-items-start`}

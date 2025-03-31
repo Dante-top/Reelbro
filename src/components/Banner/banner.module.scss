@@ -51,6 +51,7 @@
       justify-content: center;
       align-items: start;
       rotate: -3deg;
+      gap: 8px;
     }
     .banner_btnWallet_title {
       -webkit-text-stroke: 8px black;
@@ -64,9 +65,10 @@
       padding: 8px 16px;
       border-radius: 32px;
       background-color: #2045ca;
-      color: #ffffff;
+      color: #fff;
       p {
-        font-size: 24px;
+        font-size: 20px;
+        font-family: "HeyComic", sans-serif;
         -webkit-text-stroke: 1px black;
         margin: 0;
       }
@@ -75,7 +77,7 @@
         border-radius: 100%;
         width: 15px;
         height: 15px;
-        background-color: #f5882d;
+        background-color: #50b861;
       }
     }
   }

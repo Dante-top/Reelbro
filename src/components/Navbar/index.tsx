@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
                 alt="Logo"
               />
             </a>
-            <h1 className="mt-2">REELBRO</h1>
+            <h1 className="mt-2 d-none d-lg-block">REELBRO</h1>
           </div>
           <button
             type="button"

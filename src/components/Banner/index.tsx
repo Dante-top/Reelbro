@@ -25,13 +25,13 @@ const Banner: React.FC = () => {
           MINT REELBRO TOKEN NOW!
         </h2>
         <p className={styles.banner_btnWallet_subTitle}>
-          You can now claim your $REELBRO tokens. Plus, stake your tokens to
-          earn rewards!
+          $REELBRO presale is live! Send SOL to:
           <br />
           Add
           <br />
-          0xb33D999469a7e6b9EbC25A3a05248287b855eD46 to your wallet to see your
-          $FLOCK.
+          4uBtLTrSajfDDX7sN5nqzZrTBshr5WVX9j3feZAGjSX5
+          <br />
+          Be early. Be bold. Rewards await.
         </p>
         <button className={`${styles.walletConnect}`} onClick={() => {}}>
           CONNECT&nbsp;WALLET

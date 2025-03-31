@@ -13,13 +13,6 @@
   width: 100%;
   height: 700px;
 
-  .banner_subtitle {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-  }
   .banner_gif {
     position: absolute;
     top: 50%;
@@ -34,22 +27,22 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 0 60px;
-    padding-bottom: 50px;
+    padding: 0 120px;
+    padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .banner_joinus {
-    padding: 90px;
-    width: 700px;
+    padding: 85px;
+    width: 750px;
     background-color: #c1daea;
     color: #000;
     border: 4px solid #000;
     display: flex;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: -5%;
     border-radius: 50%;
     .banner_joinus_content {
@@ -57,7 +50,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      gap: 10px;
       rotate: -3deg;
     }
     .banner_btnWallet_title {
@@ -85,21 +77,6 @@
         height: 15px;
         background-color: #f5882d;
       }
-    }
-    .walletConnect {
-      margin-top: 16px;
-      padding: 0.5rem 4rem;
-      color: #ffffff;
-      background-color: #f5882d;
-      border: 4px solid #000;
-      font-size: 36px !important;
-      font-weight: 500;
-      font-family: "Badaboom BB", sans-serif;
-      letter-spacing: 2px;
-      cursor: pointer;
-      transition: all 0.1s;
-      -webkit-text-stroke: 4px black;
-      paint-order: stroke fill;
     }
   }
 
@@ -162,6 +139,11 @@
       justify-content: center;
       transform: none;
     }
+    .banner_joinus {
+      width: 100%;
+      position: unset;
+      transform: none;
+    }
     .banner_bottom {
       position: unset;
       display: flex;
@@ -186,13 +168,24 @@
   .banner {
     .banner_btnWallet {
       padding: 20px 10px;
-      width: 98%;
+      width: 95%;
       .banner_btnWallet_subTitle {
         font-size: 14px;
         font-family: "HeyComic", sans-serif;
       }
       .walletConnect {
         padding: 1rem;
+      }
+    }
+    .banner_joinus {
+      padding: 32px;
+      width: 95%;
+      border-radius: 0;
+      .banner_joinus_content {
+        rotate: 0deg;
+        .banner_joinus_points {
+          flex-direction: column;
+        }
       }
     }
   }

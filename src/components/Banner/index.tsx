@@ -5,9 +5,6 @@ import SocialButton from "../SocialButton";
 const Banner: React.FC = () => {
   return (
     <div className={`${styles.banner}`}>
-      <div className={styles.banner_subtitle}>
-        <h1>WHERE SPORTS. CHARITY & CRYPTO COLLIDE</h1>
-      </div>
       <div className={styles.banner_gif}>
         <img
           src="/assets/img/gif_banner.GIF"
@@ -15,39 +12,44 @@ const Banner: React.FC = () => {
           className={styles.banner_anim}
         />
       </div>
-      <div className={styles.banner_bottom}>
-        <div className={`${styles.banner_social}`}>
-          <SocialButton />
-        </div>
-      </div>
       <div className={styles.banner_joinus}>
         <div className={styles.banner_joinus_content}>
           <h1 className={styles.banner_btnWallet_title}>
-            $REELBRO. the people's meme coin.
+            $REELBRO. dont just invest - Manifest.
           </h1>
           <p className={styles.banner_btnWallet_subTitle}>
-            The Flockerz revolutionary Vote-To-Earn platform puts the POWER in
-            your hands.
+            Align your energy. Invest with intention. ReelBro turns good karma
+            into abundance — flowing back as wealth, purpose, and peace.
           </p>
-          <div className="d-flex flex-column justify-content-start">
-            <div className="d-flex gap-3 justify-content-center align-items-center">
+          <p className={styles.banner_btnWallet_subTitle}>
+            Up to 1000%+ APY available for early stakers
+          </p>
+          <div className="d-flex flex-column justify-content-start align-items-start gap-2">
+            <div
+              className={`${styles.banner_joinus_points} d-flex gap-2 justify-content-center align-items-start`}
+            >
               <div
                 className={`${styles.banner_joinus_concepts} d-flex gap-2 justify-content-center align-items-center`}
               >
                 <span className={styles.banner_joinus_dot}></span>
-                <p>EARN BY VOTING</p>
+                <p>LIMITED STAKING POOL</p>
               </div>
               <div
                 className={`${styles.banner_joinus_concepts} d-flex gap-2 justify-content-center align-items-center`}
               >
                 <span className={styles.banner_joinus_dot}></span>
-                <p>HUGE EARLY REWARDS</p>
+                <p>MULTIPLE LOCK-UP OPTIONS</p>
+              </div>
+            </div>
+            <div className="d-flex gap-2 justify-content-center align-items-center">
+              <div
+                className={`${styles.banner_joinus_concepts} d-flex gap-2 justify-content-center align-items-center`}
+              >
+                <span className={styles.banner_joinus_dot}></span>
+                <p>CLAIM MONTHLY, STAY FLEXIBLE</p>
               </div>
             </div>
           </div>
-          <button className={`${styles.walletConnect}`} onClick={() => {}}>
-            JOIN&nbsp;THE&nbsp;$REELBRO!
-          </button>
         </div>
       </div>
       <div className={styles.banner_btnWallet}>
@@ -66,6 +68,11 @@ const Banner: React.FC = () => {
         <button className={`${styles.walletConnect}`} onClick={() => {}}>
           CONNECT&nbsp;WALLET
         </button>
+      </div>
+      <div className={styles.banner_bottom}>
+        <div className={`${styles.banner_social}`}>
+          <SocialButton />
+        </div>
       </div>
     </div>
   );

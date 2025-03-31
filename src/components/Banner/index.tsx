@@ -8,6 +8,13 @@ const Banner: React.FC = () => {
       <div className={styles.banner_subtitle}>
         <h2>WHERE SPORTS. CHARITY & CRYPTO COLLIDE</h2>
       </div>
+      <div className={styles.banner_gif}>
+        <img
+          src="/assets/img/gif_banner.GIF"
+          alt="gif_banner"
+          className={styles.banner_anim}
+        />
+      </div>
       <div className={styles.banner_bottom}>
         <div className={`${styles.banner_social}`}>
           <SocialButton />

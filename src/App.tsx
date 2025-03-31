@@ -23,8 +23,10 @@ function App() {
         draggable
         pauseOnHover
       />
-      <Navbar />
-      <Banner />
+      <div className="hero_content">
+        <Navbar />
+        <Banner />
+      </div>
       <Team />
       <Donate />
       <GamePlan />

@@ -31,3 +31,10 @@ h3 {
   -webkit-text-stroke: 4px black;
   paint-order: stroke fill;
 }
+
+.hero_content {
+  background-image: url("./assets/img/bg_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

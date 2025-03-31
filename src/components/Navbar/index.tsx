@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
             <div
               className={`${
                 styles.navbar_nav
-              } justify-content-center align-items-center navbar-nav ms-auto ${
+              } justify-content-center align-items-start navbar-nav ms-auto ${
                 open ? styles.open : ""
               }`}
             >

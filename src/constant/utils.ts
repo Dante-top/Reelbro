@@ -24,72 +24,77 @@ export const socialIcons = [
   },
 ];
 
-export const teamMembers = [
+export const roadmapStages = [
   {
-    avatar: "/assets/img/img_draft.png",
-    name: "ReelBro",
-    desc: "Casting a net of support across sports and charities—every trade makes a splash!",
+    title: "Token Launch & Infrastructure Setup",
+    step: "Step 1",
+    content: [
+      "Launch 10M $REELBRO on DEX (Raydium) to raise initial capital",
+      "Finalise branding and website",
+      "Complete Solana smart contract with:",
+      "Multisig charity wallet",
+      "Presale logic",
+      "Staking system",
+      "Audit smart contract",
+    ],
   },
   {
-    avatar: "/assets/img/img_draft.png",
-    name: "Football Bruv",
-    desc: "No offside, just upside! Kicking it to the moon with every trade.",
-  },
-];
-
-export const gameplanContent = [
-  {
-    title: "Proof of Play",
-    desc: "Play, earn, and support charities with every interaction.",
-  },
-  {
-    title: "ReelFi",
-    desc: "DeFi, but with real impact",
+    title: "Community & Presale",
+    step: "Step 2",
+    content: [
+      "Recruit brand ambassadors & influencers",
+      "Begin marketing campaign (Telegram, Twitter Spaces, Shorts, etc.)",
+      "Launch presale in multiple rounds with increasing price",
+      "Enable charity upload section on website with SOL submission fee and voting",
+      "Launch staking dashboard and reward multipliers",
+      "Begin leaderboard rewards (community engagement)",
+      "Launch 10M $REELBRO on DEX (Raydium) to raise initial capital",
+    ],
   },
   {
-    title: "Broconomics",
-    desc: "Economy powered by sports & community engagement.",
+    title: "Ecosystem Growth & DEX Traction",
+    step: "Step 3",
+    content: [
+      "Launch staking with up to 143% APY rewards",
+      "Add advanced charity proposal dashboard",
+      "Enable full on-chain voting and multisig approvals",
+      "Launch merch store and NFTs supporting donations",
+      "Apply for Tier 2 listings on CEXs (like MEXC or BitMart)",
+      "Weekly reports on donations raised and distributed (real-time API on site)",
+      "Launch 10M $REELBRO on DEX (Raydium) to raise initial capital",
+    ],
   },
   {
-    title: "Catch & HODL",
-    desc: "Reel in rewards while supporting real-world causes.",
+    title: "Brand Partnerships & Adoption",
+    step: "Step 4",
+    content: [
+      "Begin talks with clubs and brands to accept $REELBRO",
+      "Integrate real-world use cases for token (ticketing, merch, digital collectibles)",
+      "Expand to NFT charity passes for exclusive events",
+      "Partner with verified GoFundMe campaigns for cross-promotion",
+      "Launch charitable mini-campaigns (match fundraisers, influencer streams)",
+    ],
   },
   {
-    title: "WAGMI United",
-    desc: "Because we’re all gonna make it, on and off the pitch.",
-  },
-];
-
-export const tokenUtilityContent = [
-  {
-    title: "Stake-to-Play",
-    desc: "Boost your rewards while backing grassroots sports.",
-  },
-  {
-    title: "TeamREEL",
-    desc: "A community-driven token where the squad wins together.",
+    title: "Cross-Chain Expansion & Major CEX",
+    step: "Step 5",
+    content: [
+      "Prepare Ethereum version of $REELBRO",
+      "Bridge liquidity from Solana to ETH (via Wormhole or other protocol)",
+      "Upgrade contracts for cross-chain compatibility",
+      "Apply for major CEX listings (KuCoin, Gate, HTX, Kraken)",
+      "Explore DAO governance system for community-led donation votes",
+      "Launch mobile app for charity tracking, staking, and community proposals",
+    ],
   },
   {
-    title: "No Cap Gains",
-    desc: "Fueling the next-gen sports metaverse—no cap.",
-  },
-];
-
-export const BuyContent = [
-  {
-    title: "1",
-    desc: "",
-  },
-  {
-    title: "2",
-    desc: "",
-  },
-  {
-    title: "3",
-    desc: "",
-  },
-  {
-    title: "4",
-    desc: "",
+    title: "Long-Term Vision",
+    step: "Step 6",
+    content: [
+      "Form $REELBRO Foundation as a legal non-profit body",
+      "Integrate fiat donation rails (Stripe/PayPal → charity wallet in USDC)",
+      "Launch annual “ReelBro Day” with influencers, big donations & events",
+      "Push token to be accepted at national/international sports clubs & vendors",
+    ],
   },
 ];

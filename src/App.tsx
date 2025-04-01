@@ -2,12 +2,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-import Team from "./components/Team";
-import Donate from "./components/Donate";
-import GamePlan from "./components/GamePlan";
-import TokenUtility from "./components/TokenUtility";
-import HowToBuy from "./components/HowtoBuy";
-import Footer from "./components/footer";
+import RoadMap from "./components/Roadmap";
 
 function App() {
   return (
@@ -27,12 +22,7 @@ function App() {
       <div className="hero_content">
         <Banner />
       </div>
-      <Team />
-      <Donate />
-      <GamePlan />
-      <TokenUtility />
-      <HowToBuy />
-      <Footer />
+      <RoadMap />
     </div>
   );
 }

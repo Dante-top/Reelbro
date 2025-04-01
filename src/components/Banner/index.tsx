@@ -69,7 +69,7 @@ const Banner: React.FC = () => {
           Be early. Be bold. Rewards await.
         </p>
         <button className={`${styles.walletConnect}`} onClick={() => {}}>
-          CONNECT&nbsp;WALLET
+          Coming&nbsp;Soon
         </button>
       </div>
       <div className={styles.banner_bottom}>

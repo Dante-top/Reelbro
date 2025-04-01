@@ -4,8 +4,8 @@ import { roadmapStages } from "../../constant/utils";
 
 const RoadMap: React.FC = () => {
   return (
-    <div className={styles.roadmap}>
-      <h1>RoadMap.. Let's Fucking go!</h1>
+    <div className={styles.roadmap} id="roadmap">
+      <h1>RoadMap.. Dont just buy - believe and receive</h1>
       {roadmapStages.map((item, index) => {
         return (
           <div

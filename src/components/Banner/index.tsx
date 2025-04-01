@@ -5,7 +5,7 @@ import SocialButton from "../SocialButton";
 const Banner: React.FC = () => {
   return (
     <div className={`${styles.banner}`}>
-      <div className={styles.banner_gif}>
+      <div className={`d-none d-lg-block ${styles.banner_gif}`}>
         <img
           src="/assets/img/gif_banner.GIF"
           alt="gif_banner"

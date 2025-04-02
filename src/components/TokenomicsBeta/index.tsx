@@ -8,7 +8,7 @@ const TokenomicsBeta: React.FC = () => {
     >
       <img
         className={styles.tokenomicsbeta_img}
-        src="/assets/img/Artboard 6.png"
+        src="/assets/img/Artboard_6.png"
         alt=""
       />
     </div>

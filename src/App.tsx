@@ -3,6 +3,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import RoadMap from "./components/Roadmap";
+import Tokenomics from "./components/Tokenomics";
+import TokenomicsBeta from "./components/TokenomicsBeta";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Banner />
       </div>
       <RoadMap />
+      <Tokenomics />
+      <TokenomicsBeta />
     </div>
   );
 }

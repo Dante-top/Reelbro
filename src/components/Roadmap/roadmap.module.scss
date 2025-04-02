@@ -13,7 +13,7 @@
     width: 100%;
     gap: 2rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     .roadmap_content_stage {
       text-align: start;
       color: #000;
@@ -29,7 +29,7 @@
       font-family: "HeyComic", sans-serif;
     }
     .roadmap_content_stage_title {
-      width: 55%;
+      width: 35%;
       text-align: center;
     }
   }

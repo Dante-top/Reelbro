@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import RoadMap from "./components/Roadmap";
 import Tokenomics from "./components/Tokenomics";
-import TokenomicsBeta from "./components/TokenomicsBeta";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
       </div>
       <RoadMap />
       <Tokenomics />
-      <TokenomicsBeta />
+      <Footer />
     </div>
   );
 }

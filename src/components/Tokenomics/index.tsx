@@ -6,11 +6,25 @@ const Tokenomics: React.FC = () => {
     <div
       className={`${styles.tokenomics} d-flex justify-content-center align-items-center`}
     >
-      <img
-        className={styles.tokenomics_img}
-        src="/assets/img/Artboard_5.png"
-        alt=""
-      />
+      <h1>$REELBRO TOKENOMICS</h1>
+      <h3>TOTAL SUPPLY: 1,000,000,000</h3>
+      <div className={styles.tokenomics_img}>
+        <img
+          className={styles.tokenomics_img_graph}
+          src="/assets/img/img_graph.png"
+          alt=""
+        />
+        <img
+          className={styles.tokenomics_img_graph}
+          src="/assets/img/img_fish.png"
+          alt=""
+        />
+      </div>
+      <h3>TEAM & DEVELOPMENT (15% OF SUPPLY)</h3>
+      <ul className={styles.tokenomics_detail}>
+        <li className="">150,000,000 TOKENS ALLOCATED</li>
+        <li className="">GRADUAL RELEASE FOR LONG-TERM SUSTAINABILITY</li>
+      </ul>
     </div>
   );
 };

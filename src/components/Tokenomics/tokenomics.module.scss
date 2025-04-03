@@ -1,7 +1,54 @@
 .tokenomics {
   width: 100%;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
   .tokenomics_img {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    .tokenomics_img_fish {
+      width: 45%;
+    }
+    .tokenomics_img_graph {
+      width: 45%;
+    }
+  }
+  .tokenomics_detail {
+    color: #000;
+    font-size: 20px;
+    font-family: "HeyComic", sans-serif;
+  }
+}
+
+@media (max-width: 769px) {
+  .tokenomics {
+    padding: 16px;
+    h1 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    .tokenomics_img {
+      flex-direction: column;
+      gap: 2rem;
+      .tokenomics_img_fish {
+        width: 100%;
+      }
+      .tokenomics_img_graph {
+        width: 100%;
+      }
+    }
   }
 }

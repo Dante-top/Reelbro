@@ -1,7 +1,10 @@
 .footer {
   width: 100%;
   text-align: center;
-  padding: 50px;
+  padding: 35px;
+  p {
+    font-family: "HeyComic", sans-serif;
+  }
 }
 
 @media (max-width: 769px) {

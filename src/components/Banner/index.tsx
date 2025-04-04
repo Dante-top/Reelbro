@@ -25,7 +25,9 @@ const Banner: React.FC = () => {
             className={`${styles.banner_joinus_concepts} d-flex gap-2 justify-content-center align-items-center`}
           >
             <span className={styles.banner_joinus_dot}></span>
-            <p>Up to 1000%+ APY available for early stakers</p>
+            <p>
+              Up to <span>1000</span>%+ APY available for early stakers
+            </p>
           </div>
           <div className="d-flex flex-column justify-content-start align-items-start gap-2">
             <div

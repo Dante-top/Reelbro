@@ -23,7 +23,9 @@ const Tokenomics: React.FC = () => {
       </div>
       <h3>TEAM & DEVELOPMENT (15% OF SUPPLY)</h3>
       <ul className={styles.tokenomics_detail}>
-        <li className="">150,000,000 TOKENS ALLOCATED</li>
+        <li className="">
+          <span>150,000,000</span> TOKENS ALLOCATED
+        </li>
         <li className="">GRADUAL RELEASE FOR LONG-TERM SUSTAINABILITY</li>
       </ul>
     </div>

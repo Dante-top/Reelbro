@@ -1,10 +1,9 @@
 export const navbarMenuList = [
   { menu: "ABOUT", href: "#" },
   { menu: "STAKING", href: "#stake" },
-  { menu: "PLAY", href: "#play" },
   { menu: "ROADMAP", href: "#roadmap" },
   { menu: "TOKENOMICS", href: "#tokenomics" },
-  { menu: "PROPOSALS", href: "#proposals" },
+  { menu: "COMING SOON", href: "#proposals" },
 ];
 export const socialIcons = [
   {

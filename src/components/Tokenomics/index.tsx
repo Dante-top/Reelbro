@@ -5,6 +5,7 @@ const Tokenomics: React.FC = () => {
   return (
     <div
       className={`${styles.tokenomics} d-flex justify-content-center align-items-center`}
+      id="tokenomics"
     >
       <h1>$REELBRO TOKENOMICS</h1>
       <h3>TOTAL SUPPLY: 1,000,000,000</h3>

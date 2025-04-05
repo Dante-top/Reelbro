@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import RoadMap from "./components/Roadmap";
 import Tokenomics from "./components/Tokenomics";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <div className="hero_content">
         <Banner />
       </div>
+      <About />
       <RoadMap />
       <Tokenomics />
       <Footer />

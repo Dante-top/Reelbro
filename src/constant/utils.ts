@@ -23,6 +23,32 @@ export const socialIcons = [
   },
 ];
 
+export const aboutContent = [
+  {
+    title: "Believe. Receive. Repeat.",
+    desc: `Every time you buy $REELBRO, you’re doing more than investing — you’re joining a cycle of giving that transforms lives.
+Our unique 30-day charitable fund lets real people from anywhere in the world submit causes that matter to them. Think grassroots campaigns, JustGiving-style projects, and everyday heroes trying to make a difference — not just registered charities.
+From cricket equipment for rural villages in Pakistan, to basketball courts in underserved US neighbourhoods, to indoor 3G football pitches for struggling communities in the UK — every vote supports something meaningful.`,
+  },
+  {
+    title: "How it works:",
+    desc: `Supporters submit their causes by contributing a small amount in SOL.
+This entry fuels buy pressure and keeps the system alive with fresh momentum.
+You vote. One cause receives the full REELBRO fund each month. The rest stay in the running for future rounds.
+This creates a continuous cycle of participation, visibility, and impact-driven entirely by the community.`,
+  },
+  {
+    title: "Tokenomics That Actually Give Back",
+    desc: `$REELBRO is designed for sustainability, growth, and rewards — with a tokenomics model that supports both holders and the causes they care about:
+  •  SOL entry fees from listed causes create demand
+  •  A percentage of all revenue is burned to reduce supply
+  •  Long-term stakers are rewarded with high APY in a secure, audited contract
+  •  Community voting encourages engagement
+  •  Listings drive ongoing buy pressure and token utility
+This is a real ecosystem. No empty hype — just a token that works hard while doing good.`,
+  },
+];
+
 export const roadmapStages = [
   {
     title: "Token Launch & Infrastructure Setup",

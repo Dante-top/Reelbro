@@ -24,7 +24,7 @@ const About: React.FC = () => {
             makes a difference beyond the charts.
           </p>
         </div>
-        <div className={styles.about_header_img}>
+        <div className={`${styles.about_header_img} d-none d-lg-block`}>
           <img src="/assets/img/img_fish.png" alt="ReelBro_about_img" />
         </div>
       </div>

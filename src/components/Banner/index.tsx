@@ -5,13 +5,6 @@ import SocialButton from "../SocialButton";
 const Banner: React.FC = () => {
   return (
     <div className={`${styles.banner}`}>
-      <div className={`d-none d-lg-block ${styles.banner_gif}`}>
-        <img
-          src="/assets/img/gif_banner.GIF"
-          alt="gif_banner"
-          className={styles.banner_anim}
-        />
-      </div>
       <div className={styles.banner_joinus}>
         <div className={styles.banner_joinus_content}>
           <h1 className={styles.banner_btnWallet_title}>
@@ -70,14 +63,23 @@ const Banner: React.FC = () => {
           <br />
           Be early. Be bold. Rewards await.
         </p>
-        <button className={`${styles.walletConnect}`} onClick={() => {}}>
-          Coming&nbsp;Soon
-        </button>
+        <a href="https://bit.ly/3FTCS3V" target="_blank" rel="noreferrer">
+          <button className={`${styles.walletConnect}`} onClick={() => {}}>
+            Presale&nbsp;Coming&nbsp;Soon
+          </button>
+        </a>
       </div>
       <div className={styles.banner_bottom}>
         <div className={`${styles.banner_social}`}>
           <SocialButton />
         </div>
+      </div>
+      <div className={`${styles.banner_gif}`}>
+        <img
+          src="/assets/img/gif_banner.GIF"
+          alt="gif_banner"
+          className={styles.banner_anim}
+        />
       </div>
     </div>
   );

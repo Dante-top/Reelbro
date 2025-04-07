@@ -12,6 +12,7 @@
     padding: 16px;
     color: #000;
     background-color: #c1daea;
+    border-radius: 16px;
     position: relative;
     border: 3px solid #000;
     .about_header_desc {
@@ -43,6 +44,7 @@
       border: 3px solid #000;
       text-align: center;
       background-color: #c1daea;
+      border-radius: 16px;
       padding: 16px;
       display: flex;
       flex-direction: column;
@@ -62,12 +64,13 @@
     gap: 1rem;
     width: 80%;
     color: #000;
-    font-family: "HeyComic", sans-serif;
+    border-radius: 16px;
     border: 3px solid #000;
     background-color: #c1daea;
     padding: 16px;
-    font-size: 18px;
     p {
+      font-size: 18px;
+      font-family: "HeyComic", sans-serif;
       margin: 0;
     }
   }

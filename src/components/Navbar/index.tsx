@@ -90,9 +90,14 @@ const Navbar: React.FC = () => {
                   </a>
                 );
               })}
-              <button className={`${styles.walletConnect}`} onClick={() => {}}>
-                BUY&nbsp;NOW!
-              </button>
+              <a href="https://bit.ly/3FTCS3V" target="_blank" rel="noreferrer">
+                <button
+                  className={`${styles.walletConnect}`}
+                  onClick={() => {}}
+                >
+                  BUY&nbsp;NOW!
+                </button>
+              </a>
             </div>
           </div>
         </div>

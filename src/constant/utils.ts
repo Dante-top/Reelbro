@@ -19,7 +19,7 @@ export const socialIcons = [
   {
     name: "tiktok",
     iconSrc: "/assets/img/social/tiktok.svg",
-    url: "https://www.tiktok.com/@reelbro_25",
+    url: "https://www.tiktok.com/@reelbro_solana",
   },
 ];
 

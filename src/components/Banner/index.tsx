@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./banner.module.scss";
 import SocialButton from "../SocialButton";
+import { DonateForm } from "../Donation";
+import { WalletConnectButton } from "../WalletButton";
 
 const Banner: React.FC = () => {
   return (
@@ -63,11 +65,13 @@ const Banner: React.FC = () => {
           <br />
           Be early. Be bold. Rewards await.
         </p>
-        <a href="https://bit.ly/3FTCS3V" target="_blank" rel="noreferrer">
+        {/* <a href="https://bit.ly/3FTCS3V" target="_blank" rel="noreferrer">
           <button className={`${styles.walletConnect}`} onClick={() => {}}>
             Presale&nbsp;Coming&nbsp;Soon
           </button>
-        </a>
+        </a> */}
+        <WalletConnectButton />
+        <DonateForm />
       </div>
       <div className={styles.banner_bottom}>
         <div className={`${styles.banner_social}`}>

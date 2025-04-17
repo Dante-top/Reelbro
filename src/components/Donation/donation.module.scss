@@ -1,0 +1,32 @@
+.donate_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .donate_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Badaboom BB", sans-serif;
+    letter-spacing: 1px;
+    p {
+      margin: 0;
+    }
+    .donate_button {
+      padding: 8px;
+      color: #ffffff;
+      background-color: #50b861;
+      border: 3px solid #000;
+      font-family: "Badaboom BB", sans-serif;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.1s;
+      -webkit-text-stroke: 4px black;
+      paint-order: stroke fill;
+    }
+  }
+}

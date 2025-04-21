@@ -9,7 +9,7 @@ import { useState } from "react";
 import styles from "./donation.module.scss";
 
 const DEPOSIT_WALLET = new PublicKey(
-  "G7NH5m3gcLBHEExa7wu7fU3dfFtcGB38sD2SdB7wEYXm",
+  process.env.REACT_APP_DONATE_ADDRESS || "",
 );
 
 export const DonateForm = () => {
@@ -24,6 +24,7 @@ export const DonateForm = () => {
     if (!publicKey) return;
 
     const lamports = parseFloat(amount) * LAMPORTS_PER_SOL;
+    console.log("lamports: ", lamports);
     const transaction = new Transaction().add(
       SystemProgram.transfer({
         fromPubkey: publicKey,
@@ -35,6 +36,20 @@ export const DonateForm = () => {
     try {
       const signature = await sendTransaction(transaction, connection);
       setStatus(`✅ Transaction sent! Signature: ${signature}`);
+      // ⬇ Send donation record to backend
+      // const response = await fetch(
+      //   process.env.REACT_APP_API_URL + "donations",
+      //   {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/json" },
+      //     body: JSON.stringify({
+      //       wallet: publicKey.toBase58(),
+      //       amount: parseFloat(amount),
+      //       signature,
+      //     }),
+      //   },
+      // );
+      // console.log("response: ", response);
     } catch (err) {
       setStatus("❌ Transaction failed: " + (err as Error).message);
     }
@@ -42,7 +57,7 @@ export const DonateForm = () => {
 
   if (!publicKey) {
     return (
-      <p className="mt-4 text-gray-600">
+      <p className={styles.donate_status}>
         Please connect your wallet to make a donation.
       </p>
     );
@@ -66,7 +81,7 @@ export const DonateForm = () => {
           </button>
         </div>
       </form>
-      {status && <p className="text-sm">{status}</p>}
+      {status && <p className={styles.donate_status}>{status} </p>}
     </div>
   );
 };

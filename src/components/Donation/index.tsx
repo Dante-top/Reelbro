@@ -14,6 +14,7 @@ const DEPOSIT_WALLET = new PublicKey(
 
 export const DonateForm = () => {
   const { connection } = useConnection();
+  const tokenPrice = 0.0016; // Example token price in USD
   const { publicKey, sendTransaction } = useWallet();
 
   const [amount, setAmount] = useState("");
@@ -71,15 +72,24 @@ export const DonateForm = () => {
           <input
             type="number"
             step="0.01"
-            placeholder="e.g. 0.5"
+            placeholder="E.G: 0.05"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            className="border px-3 py-2 rounded-md w-full mb-3"
+            className="border px-3 py-2 rounded-md w-full"
           />
           <button type="submit" className={styles.donate_button}>
-            Donate
+            Buy
           </button>
         </div>
+        <p>
+          $REELBRO Receive :{" "}
+          <span className={styles.donate_token_amount}>
+            {(parseFloat(amount) / tokenPrice).toFixed(2)}
+          </span>
+        </p>
+        <p>
+          Price : <span className={styles.donate_token_amount}>$0.0016</span>
+        </p>
       </form>
       {status && <p className={styles.donate_status}>{status} </p>}
     </div>

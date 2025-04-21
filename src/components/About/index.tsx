@@ -5,7 +5,7 @@ import { aboutContent } from "../../constant/utils";
 const About: React.FC = () => {
   return (
     <div
-      className={`${styles.about} d-flex justify-content-center align-items-center`}
+      className={`${styles.about} justify-content-center align-items-center`}
       id="about"
     >
       <div className={styles.about_header}>

@@ -57,35 +57,29 @@ const Banner: React.FC = () => {
       </div>
       <div className={styles.banner_btnWallet}>
         <h2 className={styles.banner_btnWallet_title}>
-          MINT REELBRO TOKEN NOW!
+          BUY $REELBRO TOKEN IN PRESALE NOW!
         </h2>
-        <FlipClockCountdown
-          to={new Date().getTime() + 24 * 3600 * 1000 + 5000}
-          labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
-          labelStyle={{
-            fontSize: 16,
-            fontWeight: 500,
-            textTransform: "uppercase",
-          }}
-          digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }}
-          dividerStyle={{ color: "white", height: 1 }}
-          separatorStyle={{ color: "black", size: "6px" }}
-          duration={0.5}
-        />
+        <div className="">
+          <FlipClockCountdown
+            to={1745546132000}
+            labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
+            labelStyle={{
+              fontSize: 16,
+              fontWeight: 500,
+              textTransform: "uppercase",
+            }}
+            digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }}
+            dividerStyle={{ color: "white", height: 1 }}
+            separatorStyle={{ color: "black", size: "6px" }}
+            duration={0.5}
+          />
+        </div>
         <p className={styles.banner_btnWallet_subTitle}>
-          $REELBRO presale is live! Send SOL to:
+          Grab $REELBRO now at the presale price.
           <br />
-          Add
-          <br />
-          4uBtLTrSajfDDX7sN5nqzZrTBshr5WVX9j3feZAGjSX5
-          <br />
-          Be early. Be bold. Rewards await.
+          When the countdown expires the price rises. Prices will never be this
+          low again
         </p>
-        {/* <a href="https://bit.ly/3FTCS3V" target="_blank" rel="noreferrer">
-          <button className={`${styles.walletConnect}`} onClick={() => {}}>
-            Presale&nbsp;Coming&nbsp;Soon
-          </button>
-        </a> */}
         <WalletConnectButton />
         <DonateForm />
       </div>

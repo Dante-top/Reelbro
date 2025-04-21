@@ -1,5 +1,6 @@
 .about {
   padding: 36px;
+  display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
@@ -25,10 +26,12 @@
     }
     .about_header_img {
       position: absolute;
-      right: -30%;
-      top: -40%;
+      transform: translate(-50%, -50%);
+      right: -23%;
+      top: 35%;
+      width: 360px;
       img {
-        width: 40%;
+        width: 100%;
       }
     }
   }

@@ -3,6 +3,8 @@ import styles from "./banner.module.scss";
 import SocialButton from "../SocialButton";
 import { DonateForm } from "../Donation";
 import { WalletConnectButton } from "../WalletButton";
+import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
+import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 
 const Banner: React.FC = () => {
   return (
@@ -12,6 +14,7 @@ const Banner: React.FC = () => {
           <h1 className={styles.banner_btnWallet_title}>
             $REELBRO. dont just invest - Manifest.
           </h1>
+
           <p className={styles.banner_btnWallet_subTitle}>
             Align your energy. Invest with intention. ReelBro turns good karma
             into abundance — flowing back as wealth, purpose, and peace.
@@ -56,6 +59,19 @@ const Banner: React.FC = () => {
         <h2 className={styles.banner_btnWallet_title}>
           MINT REELBRO TOKEN NOW!
         </h2>
+        <FlipClockCountdown
+          to={new Date().getTime() + 24 * 3600 * 1000 + 5000}
+          labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
+          labelStyle={{
+            fontSize: 16,
+            fontWeight: 500,
+            textTransform: "uppercase",
+          }}
+          digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }}
+          dividerStyle={{ color: "white", height: 1 }}
+          separatorStyle={{ color: "black", size: "6px" }}
+          duration={0.5}
+        />
         <p className={styles.banner_btnWallet_subTitle}>
           $REELBRO presale is live! Send SOL to:
           <br />

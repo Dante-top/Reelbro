@@ -59,7 +59,7 @@ const Banner: React.FC = () => {
         <h2 className={styles.banner_btnWallet_title}>
           BUY $REELBRO TOKEN IN PRESALE NOW!
         </h2>
-        <div className="">
+        <div className="d-flex justify-content-center align-items-center">
           <FlipClockCountdown
             to={1745546132000}
             labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
@@ -71,6 +71,7 @@ const Banner: React.FC = () => {
             digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }}
             dividerStyle={{ color: "white", height: 1 }}
             separatorStyle={{ color: "black", size: "6px" }}
+            spacing={{ clock: 1, digitBlock: 1 }}
             duration={0.5}
           />
         </div>

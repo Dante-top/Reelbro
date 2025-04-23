@@ -38,19 +38,16 @@ export const DonateForm = () => {
       const signature = await sendTransaction(transaction, connection);
       setStatus(`✅ Transaction sent! Signature: ${signature}`);
       // ⬇ Send donation record to backend
-      // const response = await fetch(
-      //   process.env.REACT_APP_API_URL + "donations",
-      //   {
-      //     method: "POST",
-      //     headers: { "Content-Type": "application/json" },
-      //     body: JSON.stringify({
-      //       wallet: publicKey.toBase58(),
-      //       amount: parseFloat(amount),
-      //       signature,
-      //     }),
-      //   },
-      // );
-      // console.log("response: ", response);
+      const response = await fetch("/api/donations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          wallet: publicKey.toBase58(),
+          amount: parseFloat(amount),
+          signature,
+        }),
+      });
+      console.log("response: ", response);
     } catch (err) {
       setStatus("❌ Transaction failed: " + (err as Error).message);
     }
@@ -59,7 +56,7 @@ export const DonateForm = () => {
   if (!publicKey) {
     return (
       <p className={styles.donate_status}>
-        Please connect your wallet to make a donation.
+        Please connect your wallet to make a purchase.
       </p>
     );
   }

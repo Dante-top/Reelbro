@@ -36,7 +36,6 @@ export const DonateForm = () => {
 
     try {
       const signature = await sendTransaction(transaction, connection);
-      setStatus(`✅ Transaction sent! Signature: ${signature}`);
       // ⬇ Send donation record to backend
       const response = await fetch("/api/donations", {
         method: "POST",
@@ -47,6 +46,7 @@ export const DonateForm = () => {
           signature,
         }),
       });
+      setStatus(`✅ Transaction sent! Please check your wallet.`);
       console.log("response: ", response);
     } catch (err) {
       setStatus("❌ Transaction failed: " + (err as Error).message);

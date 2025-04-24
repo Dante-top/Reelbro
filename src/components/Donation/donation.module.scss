@@ -19,10 +19,7 @@
     input {
       margin: 0;
     }
-    .donate_token_amount {
-      color: #f0b90b;
-      -webkit-text-stroke: 1px black;
-    }
+
     .donate_button {
       padding: 8px 16px;
       color: #ffffff;
@@ -38,9 +35,15 @@
   }
 }
 
+.donate_token_amount {
+  color: #f0b90b;
+  -webkit-text-stroke: 1px black;
+}
+
 .donate_status {
   font-family: "HeyComic", sans-serif;
   text-align: start;
   word-wrap: break-word;
   width: 100%;
+  margin: 0;
 }

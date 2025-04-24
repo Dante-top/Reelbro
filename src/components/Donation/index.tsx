@@ -5,7 +5,7 @@ import {
   Transaction,
   SystemProgram,
 } from "@solana/web3.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./donation.module.scss";
 
 const DEPOSIT_WALLET = new PublicKey(
@@ -19,6 +19,50 @@ export const DonateForm = () => {
 
   const [amount, setAmount] = useState("");
   const [status, setStatus] = useState("");
+  const [reelbroTokens, setReelbroTokens] = useState(0);
+  const [totalToken, setTotalToken] = useState(0);
+
+  useEffect(() => {
+    fetch(
+      "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd",
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        const price = data.solana.usd;
+        console.log("SOL price: ", price);
+        calculateTokens(price, amount);
+      })
+      .catch((err) => console.error("Failed to fetch SOL price:", err));
+  }, [amount]);
+
+  const getTotalTokenAmount = async () => {
+    console.log("publicKey: ", publicKey?.toBase58());
+    try {
+      const response = await fetch(
+        `/api/donations/getTokenAmount/${publicKey?.toBase58()}`,
+      );
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to fetch total.");
+      }
+
+      setTotalToken(data.total_token_amount);
+    } catch (err: any) {
+      console.error(err);
+      setStatus(err.message || "Failed to fetch total.");
+    }
+  };
+
+  useEffect(() => {
+    getTotalTokenAmount();
+  }, [publicKey]);
+
+  const calculateTokens = (price: number, amount: any) => {
+    const usdValue = price * amount;
+    const tokens = (usdValue / tokenPrice).toFixed(2);
+    setReelbroTokens(Number(tokens));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +86,8 @@ export const DonateForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           wallet: publicKey.toBase58(),
-          amount: parseFloat(amount),
+          sol_amount: parseFloat(amount),
+          token_amount: reelbroTokens,
           signature,
         }),
       });
@@ -55,9 +100,14 @@ export const DonateForm = () => {
 
   if (!publicKey) {
     return (
-      <p className={styles.donate_status}>
-        Please connect your wallet to make a purchase.
-      </p>
+      <div className="d-flex flex-column justify-content-center align-items-center">
+        <p className={styles.donate_status}>
+          Please connect your wallet to make a purchase.
+        </p>
+        <p>
+          Price : <span className={styles.donate_token_amount}>$0.0016</span>
+        </p>
+      </div>
     );
   }
 
@@ -79,10 +129,12 @@ export const DonateForm = () => {
           </button>
         </div>
         <p>
+          Your Purchased REELBRO :{" "}
+          <span className={styles.donate_token_amount}>{totalToken}</span>
+        </p>
+        <p>
           $REELBRO Receive :{" "}
-          <span className={styles.donate_token_amount}>
-            {(parseFloat(amount) / tokenPrice).toFixed(2)}
-          </span>
+          <span className={styles.donate_token_amount}>{reelbroTokens}</span>
         </p>
         <p>
           Price : <span className={styles.donate_token_amount}>$0.0016</span>

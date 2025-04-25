@@ -61,7 +61,7 @@ const Banner: React.FC = () => {
         </h2>
         <div className="d-flex justify-content-center align-items-center">
           <FlipClockCountdown
-            to={1745546132000}
+            to={1745763180000}
             labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
             labelStyle={{
               fontSize: 16,
@@ -72,6 +72,7 @@ const Banner: React.FC = () => {
             dividerStyle={{ color: "white", height: 1 }}
             separatorStyle={{ color: "black", size: "6px" }}
             spacing={{ clock: 1, digitBlock: 1 }}
+            hideOnComplete={false}
             duration={0.5}
           />
         </div>

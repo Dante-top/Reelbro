@@ -56,6 +56,7 @@ export const DonateForm = () => {
 
   useEffect(() => {
     getTotalTokenAmount();
+    console.log("status: ", status);
   }, [publicKey]);
 
   const calculateTokens = (price: number, amount: any) => {
@@ -69,7 +70,6 @@ export const DonateForm = () => {
     if (!publicKey) return;
 
     const lamports = parseFloat(amount) * LAMPORTS_PER_SOL;
-    console.log("lamports: ", lamports);
     const transaction = new Transaction().add(
       SystemProgram.transfer({
         fromPubkey: publicKey,
@@ -91,7 +91,9 @@ export const DonateForm = () => {
           signature,
         }),
       });
-      setStatus(`✅ Transaction sent! Please check your wallet.`);
+      setStatus(
+        `✅ Transaction sent! Your tokens will be sent when we aidrop.`,
+      );
       console.log("response: ", response);
     } catch (err) {
       setStatus("❌ Transaction failed: " + (err as Error).message);

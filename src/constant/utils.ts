@@ -123,3 +123,26 @@ export const roadmapStages = [
     ],
   },
 ];
+
+export const tokenListedContent = [
+  {
+    name: "Coingabbar",
+    link: "https://www.coingabbar.com/en/crypto-ico-details/reelbro-best-token-presale-crypto-memecoin-project",
+    imgSrc: "/assets/img/tokenlisted/coingabbar.png",
+  },
+  {
+    name: "CoinVote",
+    link: "https://coinvote.cc/en/coin/ReelBro",
+    imgSrc: "/assets/img/tokenlisted/coinVote.png",
+  },
+  {
+    name: "CoinHunt",
+    link: "https://coinhunt.cc/coin/6802b949912d68bed491f27b",
+    imgSrc: "/assets/img/tokenlisted/coinHunt.png",
+  },
+  {
+    name: "IcoHolder",
+    link: "https://icoholder.com/en/reelbro-1098450",
+    imgSrc: "/assets/img/tokenlisted/icoHolder.svg",
+  },
+];

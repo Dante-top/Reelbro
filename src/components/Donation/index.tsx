@@ -7,6 +7,7 @@ import {
 } from "@solana/web3.js";
 import { useEffect, useState } from "react";
 import styles from "./donation.module.scss";
+import FundProgressBar from "../FundsProgress";
 
 const DEPOSIT_WALLET = new PublicKey(
   process.env.REACT_APP_DONATE_ADDRESS || "",
@@ -23,6 +24,11 @@ export const DonateForm = () => {
   const [totalToken, setTotalToken] = useState(0);
 
   useEffect(() => {
+    if (!amount) {
+      setReelbroTokens(0);
+      return;
+    }
+
     fetch(
       "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd",
     )
@@ -67,9 +73,13 @@ export const DonateForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!publicKey) return;
 
+    if (!publicKey || !amount) {
+      setStatus("Please connect your wallet and enter a valid amount.");
+      return;
+    }
     const lamports = parseFloat(amount) * LAMPORTS_PER_SOL;
+
     const transaction = new Transaction().add(
       SystemProgram.transfer({
         fromPubkey: publicKey,
@@ -95,6 +105,8 @@ export const DonateForm = () => {
         `✅ Transaction sent! Your tokens will be sent when we aidrop.`,
       );
       console.log("response: ", response);
+      setAmount(""); // Reset input
+      await getTotalTokenAmount(); // Refresh total tokens after transaction
     } catch (err) {
       setStatus("❌ Transaction failed: " + (err as Error).message);
     }
@@ -115,6 +127,7 @@ export const DonateForm = () => {
 
   return (
     <div className={styles.donate_content}>
+      <FundProgressBar />
       <form className={styles.donate_form} onSubmit={handleSubmit}>
         <p>Enter amount in SOL:</p>
         <div className="">

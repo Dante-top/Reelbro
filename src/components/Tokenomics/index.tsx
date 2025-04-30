@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./tokenomics.module.scss";
+import { tokenListedContent } from "../../constant/utils";
 
 const Tokenomics: React.FC = () => {
   return (
@@ -12,6 +13,25 @@ const Tokenomics: React.FC = () => {
       >
         <h1>$REELBRO TOKENOMICS</h1>
         <h3>TOTAL SUPPLY: 1,000,000,000</h3>
+      </div>
+      <h3 className="mt-2">Our Token Listed in </h3>
+      <div className={styles.linksTokenListedContent}>
+        {tokenListedContent.map((item, index) => {
+          return (
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+            >
+              <img
+                className={styles.tokenListedContent_img}
+                src={item.imgSrc}
+                alt={item.name}
+              />
+            </a>
+          );
+        })}
       </div>
       <div className={styles.tokenomics_img}>
         <img
